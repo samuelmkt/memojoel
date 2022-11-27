@@ -22,7 +22,13 @@ class PermissionsSeeder extends Seeder
     public function run()
     {
         app()[PermissionRegistrar::class]->forgetCachedPermissions();
-
+        DB::table('role_has_permissions')->delete();
+        DB::table('model_has_roles')->delete();
+        DB::table('model_has_permissions')->delete();
+        DB::table('roles')->delete();
+        DB::table('users')->delete();
+        DB::table('permissions')->delete();
+        
         $permissions = [
             // notes files model permissions
             [
