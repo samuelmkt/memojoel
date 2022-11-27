@@ -11,6 +11,7 @@ use Spatie\Permission\PermissionRegistrar;
 use App\Models\Professeur;
 use App\Models\Student;
 use App\Models\Classe;
+use Illuminate\Support\Facades\DB;
 
 class PermissionsSeeder extends Seeder
 {
