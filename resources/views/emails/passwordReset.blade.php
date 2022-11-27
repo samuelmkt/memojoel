@@ -1,0 +1,2 @@
+<span style="font-size:14px; font-weight:600;">Lien de reinitialisation mot de passe</span>
+<a href="{{url('reset-password', $token)}}" style="outline: none;padding: 13px 32px;background: #0D273D;color: #ffffff;text-decoration: none;border-radius: 9px;-webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">Changer maintenant</a>
