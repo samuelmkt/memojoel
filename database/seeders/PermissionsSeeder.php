@@ -158,14 +158,14 @@ class PermissionsSeeder extends Seeder
         $user = \App\Models\User::factory()->create([
             'name'    => 'Super Admin',
             'email'   => 'test@admin.uac.io',
-            'password'=> Hash::make('M:<i|-3w):J[$')
+            'password'=> Hash::make('memojoel')
         ]);
         $user->assignRole('Super Admin');
         
         $user = \App\Models\User::factory()->create([
             'name'    => 'Test Teacher',
             'email'   => 'test@prof.uac.io',
-            'password'=> Hash::make('M:<i|-3w):J[$')
+            'password'=> Hash::make('memojoel')
         ]);
         
         $professeur = new Professeur;
@@ -175,10 +175,10 @@ class PermissionsSeeder extends Seeder
         $user = \App\Models\User::factory()->create([
             'name'    => 'Test Student',
             'email'   => 'test@student.uac.io',
-            'password'=> Hash::make('M:<i|-3w):J[$')
+            'password'=> Hash::make('memojoel')
         ]);
         
-        $student = new Student(['matricule' => '0000000']);
+        $student = new Student(['matricule' => '1097542']);
             $classe = Classe::find(1);
 
             $user->student()->save($student);
