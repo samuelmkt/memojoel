@@ -52,16 +52,15 @@
                       <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                     </div>
                   </div>
-                    @if (Route::has('password.request'))
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                            {{ __('Mot de passe oublié?') }}
-                        </a>
-                    @endif
                   <div class="mb-3">
                     <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
                   </div>
+                  @if (Route::has('password.request'))
+                      <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                          {{ __('Mot de passe oublié?') }}
+                      </a>
+                  @endif
                 </form>
-
               </div>
             </div>
           </div>

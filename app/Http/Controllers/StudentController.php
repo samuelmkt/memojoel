@@ -48,10 +48,11 @@ class StudentController extends Controller
         DB::transaction(function () use ($request) {
             $user = User::create($request->getStudentPayloads());
             $classe = Classe::find($request->classe);
-    
-            $student = new Student();
+
+            $student = new Student($request->getStudentPayloads());
 
             $user->student()->save($student);
+
             $user->assignRole('Students');
 
             $classe->students()->save($student);

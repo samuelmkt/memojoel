@@ -68,13 +68,13 @@
 
       @endrole
 
-      @role('Super Admin', 'web')
+      @role('Super Admin')
         <li class="menu-header small text-uppercase">
           <span class="menu-header-text">Administration</span>
         </li>
         <li class="menu-item">
           <a href="javascript:void(0);" class="menu-link menu-toggle">
-            <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+            <i class="menu-icon tf-icons bx bx-copy"></i>
             <div data-i18n="Authentications">Administration</div>
           </a>
           <ul class="menu-sub">
@@ -100,9 +100,26 @@
             </li>
           </ul>
         </li>
+        <li class="menu-item">
+          <a href="javascript:void(0)" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+              <div data-i18n="Extended UI">Authorisations</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item">
+              <a href="javascript:void(0)" class="menu-link">
+                <div data-i18n="Perfect Scrollbar">Admins</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="javascript:void(0)" class="menu-link">
+                <div data-i18n="Text Divider">Roles</div>
+              </a>
+            </li>
+          </ul>
+      </li>
       @else
 
       @endrole
-      <!-- Components -->
     </ul>
 </aside>
