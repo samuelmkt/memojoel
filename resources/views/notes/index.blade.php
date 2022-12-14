@@ -24,7 +24,7 @@
                 <tr>
                   <td>{{$note->cours->classe->name ?? null }}</td>
                   <td>{{$note->cours->ecu->name ?? null }}</td>
-                  <td>{{$note->cours->professeur->user->name ?? null'}}</td>
+                  <td>{{$note->cours->professeur->user->name ?? null }}</td>
                   <td><a href="{{ asset($note->url) }}"><img src="{{ asset('assets/img/icons/xl.png') }}" alt="" width="50"></a></td>
                   <td>
                     <div class="dropdown">
