@@ -82,13 +82,9 @@ class ProfesseurController extends Controller
                 }
 
             }
-            try {
                 Password::sendResetLink(
                     ['email' => $user->email]
                 );
-            } catch (\Throwable $th) {
-                //
-            }
         });
         return redirect()->route('professeurs.index');
     }

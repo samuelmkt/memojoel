@@ -24,7 +24,7 @@ class NoteFileController extends Controller
             $notes = $user->professeur->getNoteFiles();
         }
         elseif ($user->hasRole('Super Admin') || $user->hasPermissionTo('notes show')) {
-            $notes = NoteFile::all();
+            $notes = NoteFile::withWhereHas('cours')->get();
         }
         elseif ($user->hasRole('Students')) {
 
